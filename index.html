@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario AI Gaming Expert</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="mario-container">
+            <div class="mario-sprite">
+                <!-- Mario's hat -->
+                <div class="pixel red" style="grid-area: 1/3/2/7;"></div>
+                <!-- Mario's face -->
+                <div class="pixel brown" style="grid-area: 2/2/3/5;"></div>
+                <div class="pixel skin" style="grid-area: 2/5/3/7;"></div>
+                <div class="pixel black" style="grid-area: 2/4/3/5;"></div>
+                <!-- Mario's shirt -->
+                <div class="pixel red" style="grid-area: 3/3/4/6;"></div>
+                <!-- Mario's overalls -->
+                <div class="pixel blue" style="grid-area: 4/2/6/7;"></div>
+                <div class="pixel yellow" style="grid-area: 4/3/5/4;"></div>
+                <div class="pixel yellow" style="grid-area: 4/5/5/6;"></div>
+                <!-- Mario's arms -->
+                <div class="pixel skin" style="grid-area: 4/1/5/2;"></div>
+                <div class="pixel skin" style="grid-area: 4/7/5/8;"></div>
+                <!-- Mario's shoes -->
+                <div class="pixel brown" style="grid-area: 6/1/7/3;"></div>
+                <div class="pixel brown" style="grid-area: 6/6/7/8;"></div>
+            </div>
+            <div id="response-text" class="response-text"></div>
+        </div>
+        <div id="chat-history" class="chat-history"></div>
+        <div class="input-container">
+            <input type="text" id="question-input" placeholder="Ask Mario about video games...">
+            <button onclick="askMario()">Ask Mario!</button>
+            <button id="toggleVoice">
+                <i class="fas fa-volume-up"></i>
+                <span>Voice: ON</span>
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
